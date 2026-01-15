@@ -1,44 +1,48 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(./fonts/Montserrat-Regular.ttf);
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
 }
-
-
 
 /* Através do Root, é possível pré-determinar estilos para o projeto, criando um caminho atraves do var() enquanto o projeto é desenvolvido, porém posteriormente também é possível apenas alterar o estilo especificado no "primary ou etc... Assim já alterará no projeto todo*/
 
 :root {
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
 
-    --primary-color: #8F0101;
-    --secondary-color: #B81515;
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
 
-    --background-primary-color: #ffffff;
-    --background-secondary-color: #f5f5f5;
-    --background-tertiary-color: #000000;
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
 
---text-primary-color: #222222;
---text-secondary-color: #ffffff;
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500px;
 
---title-weight: 700;
---text-weight: 400;
---menu-text-weight: 500px;
-
-/* menu: 500
+  /* menu: 500
 footer: 400
 cards: 400 e 700, todos titulos serão 700
 depoimentos: 400 */
-
 }
-*
-body, img, h1, fieldset, legend, label, input, select, textarea, button { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* body,
+img,
+h1,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    font-family: "Montserrat";
-    font-weight: var(--title-weight);
+h1 {
+  font-family: "Montserrat";
+  font-weight: var(--title-weight);
 }
